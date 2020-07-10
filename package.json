@@ -1,0 +1,18 @@
+{
+  "name": "cod-scrape",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -p .",
+    "start": "npm run build && node ./lib/index.js"
+  },
+  "keywords": [],
+  "author": "Liam Gaskell",
+  "license": "ISC",
+  "dependencies": {
+    "@types/puppeteer": "^3.0.1",
+    "puppeteer": "^5.0.0"
+  }
+}
