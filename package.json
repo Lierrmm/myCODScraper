@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc -p .",
-    "start": "npm run build && node ./lib/index.js"
+    "start": "npm run build && node ./lib/index.js",
+    "test": "npm run build && node ./lib/mapmodes.js"
   },
   "keywords": [],
   "author": "Liam Gaskell",

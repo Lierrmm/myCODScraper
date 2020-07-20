@@ -117,3 +117,5 @@ dist
 
 # Self Ignores
 output/javascript/*.js
+mappedmodes.txt
+lib/*.js

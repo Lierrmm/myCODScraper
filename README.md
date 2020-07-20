@@ -20,9 +20,13 @@ ATVI/COD like to move the routes used for their private API around different jav
     npm i puppeteer @types/puppeteer
     ```
 
-3. Create output folder with a javascript subfolder
+3. Run the script you want
 
-4. Run the script with npm start.
+    ### Cod Libs
+    > npm run start 
+
+    ### Dump MW content
+    > npm run test
 
 5. All Done!
 
