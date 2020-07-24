@@ -1,7 +1,7 @@
 {
   "name": "cod-scrape",
   "version": "1.0.0",
-  "description": "",
+  "description": "This will scrape any javascript file from my.callofduty.com / profile.callofduty.com in order to make the process of finding API routes easier.",
   "main": "index.js",
   "scripts": {
     "build": "tsc -p .",
@@ -14,5 +14,15 @@
   "dependencies": {
     "@types/puppeteer": "^3.0.1",
     "puppeteer": "^5.0.0"
-  }
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lierrmm/myCODScraper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Lierrmm/myCODScraper/issues"
+  "homepage": "https://github.com/Lierrmm/myCODScraper#readme"
 }
