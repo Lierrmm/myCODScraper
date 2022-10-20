@@ -1,7 +1,8 @@
-import * as puppeteer from 'puppeteer';
 import * as fs from 'fs';
-import { URL } from 'url';
 import * as path from 'path';
+import * as puppeteer from 'puppeteer';
+
+import { URL } from 'url';
 
 const blockedTypes: string[] = ["font", "image", "media", "other", "xhr", "fetch", "stylesheet"];
 const allowedHosts: string[] = ["my.callofduty.com", "profile.callofduty.com"];
@@ -49,7 +50,9 @@ async function cleanFolder() {
     await console.log("Hooking Responses...");
     await page.on('response', async (response) => {
         const url = new URL(response.url());
-        let filePath = `./output/javascript/${url.pathname.split('/').pop()}`;
+        let fileNameArr = url.pathname.split('/');
+        let concatFile = fileNameArr[fileNameArr.length - 2] + "_" + fileNameArr[fileNameArr.length - 1];
+        let filePath = `./output/javascript/${concatFile}`;
         if(filePath.endsWith(".js") && allowedHosts.includes(url.hostname)) {
             let buffer = await response.buffer();
             console.log("Writing", buffer.length, "bytes >", filePath);
